@@ -15,7 +15,7 @@
         },
         {
             "matchPackageNames": [
-                "^rnv$"
+                "rnv"
             ],
             "packagePatterns": [
                 "^@rnv\/.*"
@@ -25,7 +25,7 @@
         },
         {
             "matchPackageNames": [
-                "^rnv$"
+                "rnv"
             ],
             "packagePatterns": [
                 "^@rnv\/.*"
