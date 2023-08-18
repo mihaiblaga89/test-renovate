@@ -22,7 +22,7 @@
             ],
             "groupName": "rnv stable packages",
             "enabled": true,
-            "baseBranches": [
+            "matchBaseBranches": [
                 "/^release\\/.*/"
             ]
         },
@@ -38,7 +38,7 @@
             "followTag": "canary",
             "groupName": "rnv canary packages",
             "enabled": true,
-            "baseBranches": [
+            "matchBaseBranches": [
                 "main"
             ]
         }
