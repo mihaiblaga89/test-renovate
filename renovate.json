@@ -1,0 +1,40 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended",
+        ":dependencyDashboard",
+        ":semanticCommitTypeAll(chore)",
+        ":pinVersions"
+    ],
+    "packageRules": [
+        {
+            "packagePatterns": [
+                "*"
+            ],
+            "enabled": false
+        },
+        {
+            "matchPackageNames": [
+                "^rnv$"
+            ],
+            "packagePatterns": [
+                "^@rnv\/.*"
+            ],
+            "groupName": "rnv stable packages",
+            "enabled": true
+        },
+        {
+            "matchPackageNames": [
+                "^rnv$"
+            ],
+            "packagePatterns": [
+                "^@rnv\/.*"
+            ],
+            "ignoreUnstable": false,
+            "respectLatest": false,
+            "followTag": "canary",
+            "groupName": "rnv canary packages",
+            "enabled": true
+        }
+    ]
+}
