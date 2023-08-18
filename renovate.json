@@ -21,7 +21,10 @@
                 "^@rnv\/.*"
             ],
             "groupName": "rnv stable packages",
-            "enabled": true
+            "enabled": true,
+            "baseBranches": [
+                "/^release\\/.*/"
+            ]
         },
         {
             "matchPackageNames": [
@@ -34,7 +37,10 @@
             "respectLatest": false,
             "followTag": "canary",
             "groupName": "rnv canary packages",
-            "enabled": true
+            "enabled": true,
+            "baseBranches": [
+                "main"
+            ]
         }
     ]
 }
