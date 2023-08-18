@@ -6,6 +6,10 @@
         ":semanticCommitTypeAll(chore)",
         ":pinVersions"
     ],
+    "baseBranches": [
+        "main",
+        "/^release\\/.*/"
+    ],
     "packageRules": [
         {
             "packagePatterns": [
